@@ -1,0 +1,60 @@
+{
+  "project_info": {
+    "project_id": "earnest-setup-112319",
+    "project_number": "1028057736172",
+    "name": "COR Church"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028057736172:android:6e61f8ab352ec63c",
+        "client_id": "android:org.corapp.cor",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "org.corapp.cor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028057736172-h54blppf6ng7js641lijknaq8tb0tdrf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.corapp.cor",
+            "certificate_hash": "3BF888A22D4A761A6883F4D89DC31769DE818B4F"
+          }
+        },
+        {
+          "client_id": "1028057736172-9rmspi7frc15qf6ie2lj5u779kjls04g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028057736172-9rmspi7frc15qf6ie2lj5u779kjls04g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

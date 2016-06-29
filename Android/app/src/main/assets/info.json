@@ -1,0 +1,309 @@
+{
+	"ministries": [
+		{
+			"name":"Audio/Visual",
+			"leader":"Charleen Adams",
+			"contact":"charda64@gmail.com",
+			"description":"This ministry supports all COR worship services, special events, and activities by providing equipment, personnel and logistics for sound, visuals, and production. Visit the store on the COR website to download Mp3s of Sunday sermons. CDs are also available in the church lobby after the 10:30am worship service."},
+		{
+			"name":"Children's Church",
+			"leader":"Juanita Lawson",
+			"contact":"juanita.lawson11@gmail.com",
+			"description":"A component of Family Ministry at COR Church, Children’s Church serves children ages 2 through 12 during the 8A & 10:30A worship services at COR Church. This ministry provides spiritual guidance using the Bible to help children build a lifelong relationship with God. Anyone who loves children is encouraged to volunteer as a teacher. Parents who use the ministry should give back by serving in the teacher-assistant rotation."},
+		{
+			"name":"Church Decorations",
+			"leader":"Linda Crowder",
+			"contact":"eteconsulting@aol.com",
+			"description":"Church Decorations Ministry designs, selects, and installs decorations for COR Church on an on-going basis as well as for special services, holidays, and events. The goal of this ministry is to provide a living space that is both comforting and welcoming to members, guests, and visitors."},
+		{
+			"name":"COR Sessions (Tutoring)",
+			"leader":"Ewurabena Mensa-Wood",
+			"contact":"coryam08@gmail.com",
+			"description":"A component of the Youth Ministry at COR Church, COR Sessions offers individual assistance in math to youth ages 13-18 during the academic year."},
+		{
+			"name":"COR West (Satellite College Ministry)",
+			"leader":"Rev. Charles Dorsey",
+			"contact":"charles.dorsey@gmail.com",
+			"description":"COR West ministers to the spiritual, mental, economic, social, and relational needs of the young adult community, matriculating through their college years.  Among the activities of this ministry are satellite worship services on the campus of University of California, Irvine."},
+		{
+			"name":"Discipleship Training",
+			"leader":"Stephanie Arnold",
+			"contact":"sarnold1963@gmail.com",
+			"description":"Christ Our Redeemer's Discipleship training program assists the members of COR to become more committed to Christ and His church through the intimate study of God's Word."},
+		{
+			"name":"Feed My Sheep",
+			"leader":"",
+			"contact":"reception@corchurch.org",
+			"description":"Feed My Sheep ministry follows Christ's Commission by going out into the world and sharing the good news of the Gospel and showing God's love in the form of meals to the homeless and less fortunate. We also evangelize spiritually, mentally and physically extending invitations to COR Church."},
+		{
+			"name":"Finance Committee",
+			"leader":"Deborah Davis / Suzanne Kaigler",
+			"contact":"paltokids1245@aol.com",
+			"description":"Finance Committee is a ministry dedicated to the proper handling of funds donated to COR Church during worship services and throughout the year. Committee service must be recommended by the Pastor."},
+		{
+			"name":"Greeters",
+			"leader":"Jacqueline Gray",
+			"contact":"jaxngee@aol.com",
+			"description":"COR Church Greeters station themselves in the lobby and parking area before worship services to offer a friendly smile, directions, and assistance to our visitors. The goal of this ministry is to ensure visitors feel welcome and have an uplifting experience that encourages them to come back, again and again."},
+		{
+			"name":"Health & Wellness",
+			"leader":"Dr. Pamela Middleton",
+			"contact":"drpamdst@gmail.com",
+			"description":"Health & Wellness Ministry serves COR Church by providing information on disease prevention, healthy lifestyles and community health activities. This ministry also sponsors an annual Health & Wellness month culminating in a Health & Wellness Fair to emphasize illness prevention through education on healthy lifestyle choices and early illness detection by offering free health screenings."},
+		{
+			"name":"Holy Hands (Deaf Ministry)",
+			"leader":"Jodi Landry",
+			"contact":"holyhandsdeafministry@gmail.com",
+			"description":"Holy Hands Ministry shares the love of God with those who are deaf and hearing-impaired by interpreting the 10:30am worship service and reaching out to the deaf community within Orange County. The ministry prays God will lead interpreters and deaf members to find a place to belong at COR Church."},
+		{
+			"name":"Howard Thurman Institute (Univ. of La Verne)",
+			"leader":"Rev. Richard Rose, Ph.D.",
+			"contact":"rrose@laverne.edu",
+			"description":"This ministry offers an opportunity to earn an undergraduate degree in religion from the University of La Verne. Classes concentrate on the teachings of Howard Thurman and all COR members are welcome to audit."},
+		{
+			"name":"Jail Outreach",
+			"leader":"Mathurin Daniel",
+			"contact":"daniel@imri.com",
+			"description":"Jail Outreach Ministry conducts worship services and Bible studies at Orange County jails. The ministry visits one of four jails every month."},
+		{
+			"name":"Jump Start (Middle School Students)",
+			"leader":"Sharon Adams / Stephanie Arnold",
+			"contact": "phynuly@hotmail.com / sarnold1963@gmail.com",
+			"description":"Jump Start ministers to the spiritual, mental and social needs of the middle-school-age youth during the 10:30am Sunday worship service."},
+		{
+			"name":"Lay Organization",
+			"leader":"Dorothy Locke",
+			"contact":"coradmin@corchurch.org",
+			"description":"The mission of the Lay Organization is to create an atmosphere of love, an ethic of excellence, a discipline of Christian education as well as to expand the memberships’ knowledge of the AME Church, its disciplines, and the total church program. This ministry’s primary focus is to support both qualitative and quantitative church growth."},
+		{
+			"name":"Men's Ministry",
+			"leader":"Rev. Julius Dodd",
+			"contact":"jd5792@yahoo.com",
+			"description":"This ministry promotes fellowship, Bible study, and Christian character-building among men as well as serves as mentors for young males in the COR Church family and Orange County community."},
+		{
+			"name":"Music & Worship Arts Council",
+			"leader":"Regina Webb",
+			"contact":"cormwa@gmail.com",
+			"description":"Under the leadership of the Minister of Music & Worship Arts (M&WA), this ministry serves COR Church by providing music and worship arts for all worship experiences. The M&WA Council includes representatives from all performance ministry aggregations: choirs (COR-ale Mass choir, Teen Worship Arts, and Children’s Choir), dance (Word Became Dance and Greater Grace), drama, and spoken word in all age groups and seeks to engage the entire congregation to participate in worship."},
+		{
+			"name":"New Generation Praise (Youth Ministry)",
+			"leader":"Rev. Charles Dorsey",
+			"contact":"newgenerationpraise@gmail.com",
+			"description":"Youth Ministry serves as a place of fellowship, growth, and excitement for high-school-age students during the 10:30am worship service. This ministry offers unique platforms of expression, creates safe environments for discovery and personality, nurtures creative methods for theological formulation, and conducts intentional exercises for identity formation as a young Christian in the 21st century."},
+		{
+			"name":"Pastor's Care",
+			"leader":"N/A",
+			"contact":"coradmin@corchurch.org",
+			"description":"Pastor’s Care provides special attention to the needs of the Pastor before, during, after services, and as called to assist allowing the Pastor to serve God’s people. In addition, this ministry assists visiting clergy and guests to ensure they want for nothing while visiting COR Church."},
+		{
+			"name":"Prayer Ministry",
+			"leader":"Lorena Rodriguez",
+			"contact":"lorena5r@yahoo.com",
+			"description":"Is the prayer ministry at COR Church, designed to teach about the need for and practice of prayer and to 'stand in the gap' by praying for members, friends, the Orange County community, State, County, and the world."},
+		{
+			"name":"Religious Neighbors",
+			"leader":"Rev. Richard Rose",
+			"contact":"rrose@laverne.edu",
+			"description":"This ministry seeks to foster interfaith dialogue and understanding to encourage Christians to love their neighbors as themselves."},
+		{
+			"name":"Safety/Security",
+			"leader":"Michele De Veaux",
+			"contact":"mickeyd43@hotmail.com",
+			"description":"Safety Ministry monitors, observes, and addresses safety issues within the COR Church facility to provide a reasonably safe environment for congregants and visitors."},
+		{
+			"name":"Single Parents",
+			"leader":"Vanessa Clark",
+			"contact":"nevergiveupgodlovesyou@yahoo.com",
+			"description":"The ministry's main focus is to provide resources, activities, and a healthy networking support system for single parents. Our goal is to empower single parents to raise healthy children in a spiritual foundation."},
+		{
+			"name":"Singles",
+			"leader":"Licentiate Shendona Moore",
+			"contact":"cor1singles@gmail.com",
+			"description":"Singles Ministry seeks to create a safe gathering place for single Christians to experience the grace and forgiveness of God; network with single believers to find healing; “get to know one’s self;” all resulting in a more rich and stronger relationship with the one true God."},
+		{
+			"name":"Small Business",
+			"leader":"Sedric Hill",
+			"contact":"smallbizministry@gmail.com",
+			"description":"Our mission is to develop and grow businesses by providing education, networking, resource sharing and other activities to address the economic issues of our members and communities. Our vision is to fulfill our Christian mission by creating meaningful socio-economic outcomes that strengthen our communities."},
+		{
+			"name":"Spiritual Recovery",
+			"leader":"Betty Ladson / Rebecca Flood",
+			"contact":"bladson2145@gmail.com",
+			"description":"Spiritual Recovery serves men, women, and families whose lives have been affected by the use of various addictive substances. We are dedicated to the principles of anonymity and confidentiality, guarding them zealously. We hold weekly Twelve-Step meetings to share our experience, strength, and hope with one another."},
+		{
+			"name":"Stewardesses",
+			"leader":"Gwen Oden",
+			"contact":"gweno400@cox.net",
+			"description":"Stewardesses discharge of the duties of the Steward Board. Specifically, the Sacrament of the Lord’s Supper and Baptism. In addition, the stewardesses attend to the bereaved family and friends during the funeral service."},
+		{
+			"name":"Summer Enrichment Academy (Tutoring)",
+			"leader":"Rev. Charles Dorsey",
+			"contact":"charles.dorsey@gmail.com",
+			"description":"In conjunction with California State University, COR offers the Summer Enrichment Academy with an emphasis in algebra for 7th-, 8th-, and 9th-grade students during the months of June and July."},
+		{
+			"name":"Transportation",
+			"leader":"Christopher Smith",
+			"contact":"corchurchvan@gmail.com",
+			"description":"Transportation Ministry supports COR Church and its ministries by providing safe transportation to members and community patrons to and from COR Church events or activities upon request."},
+		{
+			"name":"Ushers",
+			"leader":"Kim Horn-Goodman / Geri Hall-Rhodes",
+			"contact":"kgdman3@aol.com",
+			"description":"Ushers greet and direct worshippers on sacred ground with a warm and embracing spirit. This ministry maintains an atmosphere of consecration and reflection toward God during worship service. The ushers seat members and visitors in an orderly manner, direct appropriate movement during service, and collect the offering."},
+		{
+			"name":"Visitation (Sick & Shut In)",
+			"leader":"Barbra Jernigan",
+			"contact":"barbra45@gmail.com",
+			"description":"Visitation Ministry assists Pastor in providing pastoral care by scheduling visit(s) for prayer in the hospital or at home. Members are encouraged to notify the COR Church office when a member (or friend or family) is hospitalized or seriously ill."},
+		{
+			"name":"Women's Bible Study",
+			"leader":"Rev. Martha Daniel",
+			"contact":"mdaniel@imri.com",
+			"description":"'Making it Real' Women's Bible Study has empowered women to become disciples for Jesus Christ by teaching them the Word of God. Each week women come together to fellowship, worship, praise, and learn more about the Bible. The ministry has conducted three successful Prayer Journeys and ten annual Bible Study Retreats."},
+		{
+			"name":"Women's Missionary Society / Young People's Division (YPD)",
+			"leader":"LaFonta Wall",
+			"contact":"me39@aol.com",
+			"description":"Women’s Missionary Society is an organization of committed, faith-filled Christian women that fosters missionary activities in the church and the community. The ministry’s activities include: clothing the needy; feeding the hungry; and caring for the sick with the belief that we are sent to continue the Ministry of Jesus Christ by service and witnessing to the world. The YPD provides meaningful youth training programs and opportunities for leadership, experience in all areas of church life including evangelism, Christian social relations and education."},
+		{
+			"name":"Word Became Dance",
+			"leader":"Rev. Stephanie Adams",
+			"contact":"spiritofpraise7@aol.com",
+			"description":"A component of the Music & Worship Arts Ministry at COR Church, Word Became Dance, including Greater Grace for the seasoned dancer, offers the opportunity to worship with the living temple, the body, as a living sacrifice unto God through liturgical dance. This ministry includes children, teens, young adults, and men."},
+		{
+			"name":"Young Adult Ministry (Young Adults)",
+			"leader":"Rev. Charles Dorsey",
+			"contact":"charles.dorsey@gmail.com",
+			"description":"With an overwhelming desire to mature and positively impact the community, this ministry offers a platform for young adults (18-40 years of age) to be involved, discuss relevant issues, and development theology, while establishing themselves within adulthood."}
+	],
+	"contact info" :[
+		{
+			"phone":"(949) 955-0014",
+			"fax":"(949) 955-0021",
+			"email":"coradmin@corchurch.org"}
+	],
+	"cor central" :[
+		{
+			"name":"Christ Our Redeemer Church",
+			"street address":"45 Tesla",
+			"city zip":"Irvine, CA 92618"}
+	],
+	"email contacts" :[
+		{
+			"name":"Rev. Mark E. Whitlock Jr.",
+			"title":"Senior Minister",
+			"email":"markW@corchurch.org"},
+		{
+			"name":"Rev. Hermia Shegog Whitlock",
+			"title":"1st Lady, Chief Operating Officer",
+			"email":"miaw@corchurch.org"},
+		{
+			"name":"Rev. DeWayne Knox",
+			"title":"Consultant, Music & Worship Arts ",
+			"email":"knox2fame@aol.com"},
+		{
+			"name":"Rev. Charles Dorsey",
+			"title":"COR Community Development Corp. Director ",
+			"email":"corcdc@corchurch.org"},
+		{
+			"name":"Mia Dawkins",
+			"title":"Interim Executive Assistant / Account Administrator",
+			"email":"mdawkins@corchurch.org"},
+		{
+			"name":"Charleen Adams",
+			"title":"Audio/Visual Director",
+			"email":"charda64@gmail.com"},
+		{
+			"name":"Rev. Charles Dorsey",
+			"title":"COR CDC Exec. Director",
+			"email":"corcdc@corchurch.org"},
+		{
+			"name":"Vanessa Hall",
+			"title":"Membership Director",
+			"email":"membership@corchurch.org"},
+		{
+			"name":"Derrick Lyles",
+			"title":"Youth Director",
+			"email":"d.lyles13@yahoo.com"},
+		{
+			"name":"Christopher Smith",
+			"title":"Church Van Transportation",
+			"email":"corchurchvan@gmail.com"}
+	],
+	"ministerial staff" :[
+		{
+			"name":"Rev. Mark E. Whitlock, Jr., Senior Minister",
+			"title":"Senior Minister",
+			"img":"http://www.corchurch.org/_assets/images/Staff_Clergy%20photos/Rev.%20Mark%20E.%20Whitlock,%20Jr_website.jpg"},
+		{
+			"name":"Rev. Hermia Shegog Whitlock, J.D.",
+			"title":"1st Lady, Chief Operating Officer",
+			"img":"http://www.corchurch.org/_assets/images/Staff_Clergy%20photos/Mia%20Whitlock_website.jpg"},
+		{
+			"name":"Rev. Richard  Rose, Ph.D.",
+			"title":"Assistant Pastor",
+			"img":"http://www.corchurch.org/_assets/images/Staff_Clergy%20photos/Richard%20Rose_website.jpg"},
+		{
+			"name":"Rev. Martha Daniel, MBA",
+			"title":"Associate Pastor",
+			"img":"http://www.corchurch.org/_assets/images/Staff_Clergy%20photos/Martha%20Daniel_website.jpg"},
+		{
+			"name":"Rev. Charles Dorsey",
+			"title":"COR Community Development Corp. Director ",
+			"img":"http://www.corchurch.org/_assets/images/Staff_Clergy%20photos/Charles%20Dorsey_website.jpg"},
+		{
+			"name":"Rev. Monica A. Coleman, Ph.D.",
+			"title":"Associate Minister",
+			"img":"http://www.corchurch.org/_assets/images/Staff_Clergy%20photos/Monica%20Coleman_website.jpg"},
+		{
+			"name":"Rev. Charles Dorsey, M.Div.",
+			"title":"COR Community Development Corp., Exec. Director",
+			"img":"http://www.corchurch.org/_assets/images/Staff_Clergy%20photos/Charles%20Dorsey_website.jpg"},
+		{
+			"name":"Rev. Dorothy Ruby Pollard, M.Div.",
+			"title":"Associate Minister",
+			"img":"http://www.corchurch.org/_assets/images/Staff_Clergy%20photos/Dorothy%20Ruby%20Pollard%20cropped.jpg"},
+		{
+			"name":"Rev. Stephanie Butler Adams",
+			"title":"Director of Dance",
+			"img":"http://www.corchurch.org/_assets/images/Staff_Clergy%20photos/Stephanie%20Butler%20Adams_website.jpg"},
+		{
+			"name":"Rev. Dave Grant",
+			"title":"Itinerant Elder, Associate Minister",
+			"img":"http://www.corchurch.org/_assets/images/Staff_Clergy%20photos/Dave%20Grant_website.jpg"},
+		{
+			"name":"Rev. DeWayne Knox",
+			"title":"Consultant, Music & Worship Arts ",
+			"img":"http://www.corchurch.org/_assets/images/Staff_Clergy%20photos/DeWayne%20Knox_website.jpg"},
+		{
+			"name":"Rev. Ariel Meza",
+			"title":"Director/Latino Ministry",
+			"img":"http://www.corchurch.org/_assets/images/Staff_Clergy%20photos/Ariel%20Meza%20photoshopped.jpg"}
+	],
+	"church staff" :[
+		{
+			"name":"Charleen Adams",
+			"title":"Audio/Visual Director",
+			"img":"http://www.corchurch.org/_assets/images/Staff_Clergy%20photos/charleen%20headshot_website.jpg"},
+		{
+			"name":"Mia Dawkins",
+			"title":"Interim Executive Asst./Account Administrator",
+			"img":"http://www.corchurch.org/_assets/images/Staff_Clergy%20photos/Mia%20Dawkins.jpg"},
+		{
+			"name":"Vanessa Hall",
+			"title":"Membership  Director",
+			"img":"http://www.corchurch.org/_assets/images/Staff_Clergy%20photos/Vanessa%20Hall_website.jpg"},
+		{
+			"name":"Derrick Lyles",
+			"title":"Youth Director",
+			"img":"http://www.corchurch.org/_assets/images/Staff_Clergy%20photos/Derrick%20Lyles%20croped.jpg"},
+		{
+			"name":"Juanita Lawson",
+			"title":"Children's Church",
+			"img":"http://www.corchurch.org/_assets/images/Staff_Clergy%20photos/Juanita%20Lawson_website.jpg"},
+		{
+			"name":"Christopher Smith",
+			"title":"Church Van Transportation",
+			"img":"http://www.corchurch.org/_assets/images/Staff_Clergy%20photos/male%20silhouette.JPG"}
+	]
+}

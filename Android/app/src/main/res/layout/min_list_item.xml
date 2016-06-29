@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <TextView android:id="@+id/min_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <TextView android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_below="@id/min_name"
+        android:layout_alignStart="@id/min_name"
+        android:layout_alignParentLeft="true"
+        android:textColor="#808080"
+        android:textAppearance="?attr/textAppearanceListItemSecondary"/>
+
+    <TextView android:id="@+id/msg_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_below="@id/min_name"
+        android:layout_alignParentRight="true"
+        android:textColor="#808080"
+        android:textAppearance="?attr/textAppearanceListItemSecondary"/>
+
+</RelativeLayout>
