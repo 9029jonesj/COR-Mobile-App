@@ -5,8 +5,7 @@ const Hapi = require('hapi'),
 	routes = require('./config/routes'),
 	database = require('./config/queries'),
 	SocketIO = require('socket.io'),
-	//mongoose = require('mongoose'),		// Node module for MongoDB to access DB
-	nodemailer = require('nodemailer');		// Nodemailer module to send emails
+	nodemailer = require('nodemailer');
 
 const server = new Hapi.Server();
 server.connection({
@@ -52,17 +51,16 @@ io.sockets.on('connection', function(socket) {
 	});
 	
 	socket.on('create user', function(data) {
-		var user = database.createUser(data);
+		var password = encrypt(data.password);
+		var user = database.createUser(data, password);
 		user.save(function(err) {
-			return socket.emit('Error', err);			
+			if(err) { return socket.emit('Error', err); }			
 		});
 	});
 	
 	socket.on('signup', function(data) {
-		var promise = database.checkEmail(data.email);
-		promise.catch(function(err) {
-			socket.emit('Error', err);
-		}).then(function(user) {
+		var promise = database.getUser(data.email);
+		promise.catch(function(err) { socket.emit('Error', err); }).then(function(user) {
 			if(user == null) { return socket.emit('user exist', false); }
 			else { return socket.emit('user exist', true); }
 		});
@@ -70,10 +68,8 @@ io.sockets.on('connection', function(socket) {
 	
 	socket.on('check user', function(data) {
 		var password = encrypt(data.password);
-		var promise = database.checkEmail(data.email, password);
-		promise.catch(function(err) {
-			socket.emit('Error', err);
-		}).then(function(user) {
+		var promise = database.checkAccount(data.email, password);
+		promise.catch(function(err) { socket.emit('Error', err); }).then(function(user) {
 			if(user != null) {
 				socket.emit('user exists', true);
 				// TODO: Remove the sending of users psw via email. Have user reset psw.
@@ -83,20 +79,15 @@ io.sockets.on('connection', function(socket) {
 	});
 	
 	socket.on('get groups', function(data) {
-		var promise = database.getGroups(data.email);
-		promise.catch(function(err) {
-			socket.emit('Error', err);
-		}).then(function(user) { return socket.emit('groups', user.groups); });
+		var promise = database.getUser(data.email);
+		promise.catch(function(err) { socket.emit('Error', err); }).then(function(user) { 
+			return socket.emit('groups', user.groups); });
 	});
 	
 	// TODO: Throw ACK, the update screen with group
 	socket.on('add group', function(data) {
-		console.log(data.email);
-		console.log(data.group);
 		var promise = database.addGroup(data);
-		promise.catch(function(err) {
-			socket.emit('Error', err);
-		});
+		promise.catch(function(err) { socket.emit('Error', err); });
 	});
 	
 	socket.on('login', function(data) {
