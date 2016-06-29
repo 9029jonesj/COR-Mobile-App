@@ -1,6 +1,6 @@
 {
   "name": "COR_Chat",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "private": "true",
   "dependencies": {
     "express": "^4.13.4",
