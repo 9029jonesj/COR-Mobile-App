@@ -1,6 +1,9 @@
 	/** Import mongoose module for MongoDB */
 	var mongoose = require('mongoose');
 	
+	/** Import bluebird Promise library for mongoose (ES6-Style) */
+	mongoose.Promise = require('bluebird');
+	
 	
 	/** Database Connect */
 	mongoose.connect('mongodb://localhost:27017/COR_Chat', function(err) {
@@ -63,21 +66,11 @@ module.exports = {
 	},
 	
 	/** 
-	 * Check if user's email is registered
-	 * @param {String} email
-	 * @return {Object} promise 
-	 */
-	checkEmail: function(email) {
-		var promise = User.findOne({email: email}).exec();
-		return promise;
-	},
-	
-	/** 
-	 * Get user's groups 
+	 * Get user account and properties 
 	 * @param {String} email
 	 * @return {Object} promise
 	 */
-	getGroups: function(email) {
+	getUser: function(email) {
 		var promise = User.findOne({email: email}).exec();
 		return promise;
 	},
