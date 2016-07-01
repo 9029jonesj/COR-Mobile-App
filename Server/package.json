@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": "true",
   "dependencies": {
+<<<<<<< HEAD
     "bluebird": "^3.4.1",
     "domain": "0.0.1",
+=======
+>>>>>>> origin/master
     "express": "^4.13.4",
     "hapi": "^13.4.1",
     "mongoose": "^4.4.1",

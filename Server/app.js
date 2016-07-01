@@ -1,12 +1,20 @@
 'use strict';
 
 const Hapi = require('hapi'),
+<<<<<<< HEAD
 	SocketIO = require('socket.io'),
 	Nodemailer = require('nodemailer'),
 	config = require('./config/server'),
 	routes = require('./config/routes'),
 	database = require('./config/queries');
 	
+=======
+	config = require('./config/server'),
+	routes = require('./config/routes'),
+	database = require('./config/queries'),
+	SocketIO = require('socket.io'),
+	nodemailer = require('nodemailer');
+>>>>>>> origin/master
 
 const server = new Hapi.Server();
 server.connection({
@@ -19,17 +27,28 @@ server.route(routes);
 var key;
 var promise = database.getEncryptionPassword();
 promise.catch(function(err) {
+<<<<<<< HEAD
 			socket.emit('Server Error', err.stack);
 		}).then(function(psw) { key = psw.password; }).done();
+=======
+			socket.emit('Error', err);
+		}).then(function(psw) { key = psw.password; });
+>>>>>>> origin/master
 
 /** Nodemailer Definition */
 var transporter;
 var emailPSW;
 var promise = database.getEmailPSW();
 promise.catch(function(err) {
+<<<<<<< HEAD
 			socket.emit('Server Error', err.stack);
 		}).then(function(psw) {
 			transporter = Nodemailer.createTransport({
+=======
+			socket.emit('Error', err);
+		}).then(function(psw) {
+			transporter = nodemailer.createTransport({
+>>>>>>> origin/master
 				service: 'Gmail',
 				auth: {
 					user: 'CorChurchIrvine@gmail.com',
@@ -41,7 +60,11 @@ promise.catch(function(err) {
 			}, {
 				from: 'COR Church App <corchurchirvine@gmail.com>',
 		});
+<<<<<<< HEAD
 }).done();
+=======
+});
+>>>>>>> origin/master
 
 const io = SocketIO.listen(server.listener);
 /** Socket Functionality */
@@ -55,13 +78,21 @@ io.sockets.on('connection', function(socket) {
 		var password = encrypt(data.password);
 		var user = database.createUser(data, password);
 		user.save(function(err) {
+<<<<<<< HEAD
 			if(err) { return socket.emit('Server Error', err.stack); }			
+=======
+			if(err) { return socket.emit('Error', err); }			
+>>>>>>> origin/master
 		});
 	});
 	
 	socket.on('signup', function(data) {
 		var promise = database.getUser(data.email);
+<<<<<<< HEAD
 		promise.catch(function(err) { socket.emit('Server Error', err.stack); }).then(function(user) {
+=======
+		promise.catch(function(err) { socket.emit('Error', err); }).then(function(user) {
+>>>>>>> origin/master
 			if(user == null) { return socket.emit('user exist', false); }
 			else { return socket.emit('user exist', true); }
 		});
@@ -70,7 +101,11 @@ io.sockets.on('connection', function(socket) {
 	socket.on('check user', function(data) {
 		var password = encrypt(data.password);
 		var promise = database.checkAccount(data.email, password);
+<<<<<<< HEAD
 		promise.catch(function(err) { socket.emit('Server Error', err.stack); }).then(function(user) {
+=======
+		promise.catch(function(err) { socket.emit('Error', err); }).then(function(user) {
+>>>>>>> origin/master
 			if(user != null) {
 				socket.emit('user exists', true);
 				// TODO: Remove the sending of users psw via email. Have user reset psw.
@@ -81,20 +116,32 @@ io.sockets.on('connection', function(socket) {
 	
 	socket.on('get groups', function(data) {
 		var promise = database.getUser(data.email);
+<<<<<<< HEAD
 		promise.catch(function(err) { socket.emit('Server Error', err.stack); }).then(function(user) { 
+=======
+		promise.catch(function(err) { socket.emit('Error', err); }).then(function(user) { 
+>>>>>>> origin/master
 			return socket.emit('groups', user.groups); });
 	});
 	
 	// TODO: Throw ACK, the update screen with group
 	socket.on('add group', function(data) {
 		var promise = database.addGroup(data);
+<<<<<<< HEAD
 		promise.catch(function(err) { socket.emit('Server Error', err.stack); });
+=======
+		promise.catch(function(err) { socket.emit('Error', err); });
+>>>>>>> origin/master
 	});
 	
 	socket.on('login', function(data) {
 		var password = encrypt(data.password);
 		var promise = database.checkAccount(data.email, password);
+<<<<<<< HEAD
 		promise.catch(function(err) { socket.emit('Server Error', err.stack); }).then(function(user) {
+=======
+		promise.catch(function(err) { socket.emit('Error', err); }).then(function(user) {
+>>>>>>> origin/master
 			if(user == null) { return socket.emit('not found', "Account does not exist. Check email/password combo."); } 
 			else { return socket.emit('check password', true); }
 		});
@@ -161,7 +208,11 @@ function sendUserPsw(name, email, psw) {
 	};
 	transporter.sendMail(message, function (err, info) {
 		if(err) {
+<<<<<<< HEAD
 			console.log('Message to  ' + name + ' at ' + email + '. Error is ', err.stack);
+=======
+			console.log('Message to  ' + name + ' at ' + email + '. Error is ', err);
+>>>>>>> origin/master
 		}
 		//console.log('Success', 'Message sent successfully!');
 	});
