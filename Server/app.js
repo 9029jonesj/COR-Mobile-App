@@ -1,11 +1,12 @@
 'use strict';
 
 const Hapi = require('hapi'),
+	SocketIO = require('socket.io'),
+	Nodemailer = require('nodemailer'),
 	config = require('./config/server'),
 	routes = require('./config/routes'),
-	database = require('./config/queries'),
-	SocketIO = require('socket.io'),
-	nodemailer = require('nodemailer');
+	database = require('./config/queries');
+	
 
 const server = new Hapi.Server();
 server.connection({
@@ -18,17 +19,17 @@ server.route(routes);
 var key;
 var promise = database.getEncryptionPassword();
 promise.catch(function(err) {
-			socket.emit('Error', err);
-		}).then(function(psw) { key = psw.password; });
+			socket.emit('Server Error', err.stack);
+		}).then(function(psw) { key = psw.password; }).done();
 
 /** Nodemailer Definition */
 var transporter;
 var emailPSW;
 var promise = database.getEmailPSW();
 promise.catch(function(err) {
-			socket.emit('Error', err);
+			socket.emit('Server Error', err.stack);
 		}).then(function(psw) {
-			transporter = nodemailer.createTransport({
+			transporter = Nodemailer.createTransport({
 				service: 'Gmail',
 				auth: {
 					user: 'CorChurchIrvine@gmail.com',
@@ -40,7 +41,7 @@ promise.catch(function(err) {
 			}, {
 				from: 'COR Church App <corchurchirvine@gmail.com>',
 		});
-});
+}).done();
 
 const io = SocketIO.listen(server.listener);
 /** Socket Functionality */
@@ -54,13 +55,13 @@ io.sockets.on('connection', function(socket) {
 		var password = encrypt(data.password);
 		var user = database.createUser(data, password);
 		user.save(function(err) {
-			if(err) { return socket.emit('Error', err); }			
+			if(err) { return socket.emit('Server Error', err.stack); }			
 		});
 	});
 	
 	socket.on('signup', function(data) {
 		var promise = database.getUser(data.email);
-		promise.catch(function(err) { socket.emit('Error', err); }).then(function(user) {
+		promise.catch(function(err) { socket.emit('Server Error', err.stack); }).then(function(user) {
 			if(user == null) { return socket.emit('user exist', false); }
 			else { return socket.emit('user exist', true); }
 		});
@@ -69,7 +70,7 @@ io.sockets.on('connection', function(socket) {
 	socket.on('check user', function(data) {
 		var password = encrypt(data.password);
 		var promise = database.checkAccount(data.email, password);
-		promise.catch(function(err) { socket.emit('Error', err); }).then(function(user) {
+		promise.catch(function(err) { socket.emit('Server Error', err.stack); }).then(function(user) {
 			if(user != null) {
 				socket.emit('user exists', true);
 				// TODO: Remove the sending of users psw via email. Have user reset psw.
@@ -80,20 +81,20 @@ io.sockets.on('connection', function(socket) {
 	
 	socket.on('get groups', function(data) {
 		var promise = database.getUser(data.email);
-		promise.catch(function(err) { socket.emit('Error', err); }).then(function(user) { 
+		promise.catch(function(err) { socket.emit('Server Error', err.stack); }).then(function(user) { 
 			return socket.emit('groups', user.groups); });
 	});
 	
 	// TODO: Throw ACK, the update screen with group
 	socket.on('add group', function(data) {
 		var promise = database.addGroup(data);
-		promise.catch(function(err) { socket.emit('Error', err); });
+		promise.catch(function(err) { socket.emit('Server Error', err.stack); });
 	});
 	
 	socket.on('login', function(data) {
 		var password = encrypt(data.password);
 		var promise = database.checkAccount(data.email, password);
-		promise.catch(function(err) { socket.emit('Error', err); }).then(function(user) {
+		promise.catch(function(err) { socket.emit('Server Error', err.stack); }).then(function(user) {
 			if(user == null) { return socket.emit('not found', "Account does not exist. Check email/password combo."); } 
 			else { return socket.emit('check password', true); }
 		});
@@ -160,7 +161,7 @@ function sendUserPsw(name, email, psw) {
 	};
 	transporter.sendMail(message, function (err, info) {
 		if(err) {
-			console.log('Message to  ' + name + ' at ' + email + '. Error is ', err);
+			console.log('Message to  ' + name + ' at ' + email + '. Error is ', err.stack);
 		}
 		//console.log('Success', 'Message sent successfully!');
 	});
